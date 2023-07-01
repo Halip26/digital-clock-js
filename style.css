@@ -41,11 +41,12 @@ h2 {
   #MyClockDisplay {
     font-size: 30px;
     letter-spacing: 3px;
+    border-radius: 10px;
   }
 
   h1,
   h2 {
-    font-weight: 80;
+    font-weight: 60;
     font-size: 40px;
   }
 }
