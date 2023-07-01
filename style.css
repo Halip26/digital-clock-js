@@ -35,3 +35,17 @@ h2 {
   text-align: center;
   color: #930eff;
 }
+
+@media only screen and (max-width: 600px) {
+  /* Styles for mobile devices */
+  #MyClockDisplay {
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+
+  h1,
+  h2 {
+    font-weight: 80;
+    font-size: 40px;
+  }
+}
