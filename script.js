@@ -1,30 +1,35 @@
-// disini kita kan buat fungsi showTime()
+// disini kita akan buat fungsi showTime()
 function showTime() {
   let date = new Date();
-  let h = date.getHours();
-  let m = date.getMinutes();
-  let s = date.getSeconds();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  // pada malam hari 12:00:01 AM
+  // pada siang hari 12:00:01 PM
   let session = "AM";
 
-  // disini ada if statement
-  if (h == 0) {
-    h = 12;
+  // jika hours sama dgn 0 maka 12
+  if (hours == 0) {
+    hours = 12;
   }
 
-  // ini untuk melewati jam 12 siang
-  if (h > 12) {
-    h = h - 12;
+  // jika sudah melewati siang hari 12:00:01 PM
+  if (hours > 12) {
+    hours = hours - 12;
     session = "PM";
   }
 
+  // ternery operators
   //  variabelName = (conditional) ? TRUE value : FALSE value
-  h = h < 10 ? "0" + h : h;
-  m = m < 10 ? "0" + m : m;
-  s = s < 10 ? "0" + s : s;
-  let time = h + ":" + m + ":" + s + " " + session;
+  hours = hours < 10 ? "0" + hours : hours;
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  seconds = seconds < 10 ? "0" + seconds : seconds;
+
+  let time = hours + ":" + minutes + ":" + seconds + " " + session;
+  // iniliah DOM (Document Object Model)
   document.getElementById("MyClockDisplay").innerText = time;
 
-  // ini untuk 1 detik ke 1000 milidetik
+  // ini untuk 1 ke 1000 milidetik
   setTimeout(showTime, 1000);
 }
 

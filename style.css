@@ -36,8 +36,9 @@ h2 {
   color: #930eff;
 }
 
+/* untuk buat websitenya responsive for mobile */
 @media only screen and (max-width: 600px) {
-  /* Styles for mobile devices */
+
   #MyClockDisplay {
     font-size: 30px;
     letter-spacing: 3px;
