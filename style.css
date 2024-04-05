@@ -2,6 +2,7 @@
 
 body {
   background: #141414;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #MyClockDisplay {
@@ -11,7 +12,6 @@ body {
   text-align: center;
   padding: 10px;
   color: #fee717;
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 200;
   border: 2px dashed #ee0047;
   border-radius: 20px;
@@ -31,14 +31,12 @@ h2 {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 70px;
-  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   color: #930eff;
 }
 
 /* untuk buat websitenya responsive for mobile */
 @media only screen and (max-width: 600px) {
-
   #MyClockDisplay {
     font-size: 30px;
     letter-spacing: 3px;
