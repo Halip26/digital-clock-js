@@ -36,7 +36,7 @@ h2 {
 }
 
 /* untuk buat websitenya responsive for mobile */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   #MyClockDisplay {
     font-size: 30px;
     letter-spacing: 3px;
